@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'curso-angular';
+  newDriver: string = 'Paul Johnson';
+  newData = {
+    car: 'McLaren',
+    model: 'MP4/4',
+    year: 1988
+  }
 }

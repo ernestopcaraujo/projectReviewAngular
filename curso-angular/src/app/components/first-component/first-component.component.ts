@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponentComponent implements OnInit {
 
   clientName: string = 'John Voight';
-  hobbies: string[] = ['Correr', 'Jogar', 'Saltar'];
+  sponsors: string[] = ['Marlboro', 'Shell', 'TagHeuer'];
   car = {
     name: 'McLaren',
     model:'MP4/4',
