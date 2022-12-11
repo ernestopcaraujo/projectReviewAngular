@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IfRenderComponent implements OnInit {
 
+  showDiv: boolean = true;
+  name: string = 'Terrier';
+
   constructor() { }
 
   ngOnInit(): void {
