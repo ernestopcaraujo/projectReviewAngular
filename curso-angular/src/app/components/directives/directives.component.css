@@ -1,0 +1,21 @@
+h1,
+h2 {
+    color: blueviolet;
+}
+
+.titleDirectives {
+    color: white;
+    background-color: blue ;
+}
+
+.style01{
+    font-weight: bolder;
+    color:chocolate;
+    font-size: 40px;
+}
+
+.style02 {
+    /* font-weight: normal; */
+    /* color: darkgreen; */
+    font-size: 30px;
+}
