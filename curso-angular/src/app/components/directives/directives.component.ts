@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
 
+  size: number = 30;
+  fontType: string = "Times New Roman";
+  textColor: string = "Blueviolet";
+
+  styles:string[]=['style01','style02'];
+
   constructor() { }
 
   ngOnInit(): void {
