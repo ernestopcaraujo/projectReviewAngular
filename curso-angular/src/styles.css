@@ -1,12 +1,19 @@
 *{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0;
     padding: 0;
     font-family: Helvetica;
 }
 
 a{
     color: brown;
+}
+
+body{
+    padding-bottom: 500px;
+}
+
+.class {
+    border-bottom: 1px solid red;
+    padding: 2em;
+    margin-bottom: 1em;
 }
