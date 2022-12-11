@@ -9,6 +9,7 @@ export class ParentDataComponent implements OnInit {
 
   @Input() driverName:string ='';
   @Input () driverData!: {car:string, model:string, year:number };
+  @Input () sponsorsData!:string[];
 
   constructor() { }
 
