@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'curso-angular';
   newDriver: string = 'Paul Johnson';
+  sponsors = ['Marlboro', 'Shell', 'TagHeuer'];
   newData = {
     car: 'McLaren',
     model: 'MP4/4',
     year: 1988
   }
+
 }
