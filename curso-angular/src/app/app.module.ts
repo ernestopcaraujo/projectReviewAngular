@@ -8,6 +8,7 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { DirectivesComponent } from './components/directives/directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { ClicEventsComponent } from './components/clic-events/clic-events.component';
+import { EmitterComponent } from './components/emitter/emitter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ClicEventsComponent } from './components/clic-events/clic-events.compon
     ParentDataComponent,
     DirectivesComponent,
     IfRenderComponent,
-    ClicEventsComponent
+    ClicEventsComponent,
+    EmitterComponent
   ],
   imports: [
     BrowserModule,
