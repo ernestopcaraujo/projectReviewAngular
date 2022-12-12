@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClicEventsComponent implements OnInit {
 
+  show:boolean = false;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  showMessage(): void {
+    this.show = !this.show;
   }
 
 }
