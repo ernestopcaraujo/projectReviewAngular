@@ -9,6 +9,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { ClicEventsComponent } from './components/clic-events/clic-events.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
+import { ChangeNumberComponent } from './components/change-number/change-number.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EmitterComponent } from './components/emitter/emitter.component';
     DirectivesComponent,
     IfRenderComponent,
     ClicEventsComponent,
-    EmitterComponent
+    EmitterComponent,
+    ChangeNumberComponent
   ],
   imports: [
     BrowserModule,
