@@ -1,0 +1,15 @@
+<div class="class">
+    <h1>Exibindo o componente List Render</h1>
+    <br>
+    <h2>Linhas de Crédito Disponíveis</h2>
+    <br>
+    <ul>
+        <li *ngFor="let creditLine of creditLines">
+            Linha de Crédito: {{creditLine.operation}}
+            <br>
+            Percentual Máximo de Crédito: {{creditLine.ltv}}%
+            <br>
+            <br>
+        </li>
+    </ul>
+</div>
