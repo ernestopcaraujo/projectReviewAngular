@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRenderComponent implements OnInit {
 
+  creditLines = [
+    {operation:'CGI', ltv:'60'},
+    {operation:'Aquisição', ltv:'80'},
+    {operation:'CDB', ltv:'300'},
+    {operation: 'Aquisiçao Terreno', ltv:'40'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
