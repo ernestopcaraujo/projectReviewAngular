@@ -1,5 +1,9 @@
 <div class="class">
     <h1>Exibindo o componente Clic-Events</h1>
     <button (click)="showMessage()">Clique Aqui</button>
-    <p *ngIf="show">Mostrando Mensagem</p>
+    <div *ngIf="show">Mostrando Mensagem
+        <app-change-number (changeNumber)="onChangeNumber()"></app-change-number>
+        <p>O dobrando 2 vai dar: {{myTestNumber}}</p>
+   </div>
+
 </div>

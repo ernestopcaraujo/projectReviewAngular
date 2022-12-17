@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClicEventsComponent implements OnInit {
 
+  myTestNumber : number = 2;
+
   show:boolean = false;
 
   constructor() { }
@@ -15,6 +17,14 @@ export class ClicEventsComponent implements OnInit {
 
   showMessage(): void {
     this.show = !this.show;
+  }
+
+  onChangeNumber():number{
+
+    this.myTestNumber = this.myTestNumber * 2;
+
+    return this.myTestNumber;
+
   }
 
 }
