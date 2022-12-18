@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipesComponent implements OnInit {
 
+  textTest:string = 'williams honda'
+  today: Date = new Date();
+  valueTest:number = 0.175; //transoforma valores decimais em porcentatgem
+
   constructor() { }
 
   ngOnInit(): void {
