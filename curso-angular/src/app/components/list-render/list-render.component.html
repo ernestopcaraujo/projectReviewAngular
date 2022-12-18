@@ -4,12 +4,16 @@
     <h2>Linhas de Crédito Disponíveis</h2>
     <br>
     <ul>
-        <li *ngFor="let creditLine of creditLines">
+        <li *ngFor="let creditLine of creditLines; let indexOfElement=index">
             Linha de Crédito: {{creditLine.operation}}
             <br>
-            Percentual Máximo de Crédito: {{creditLine.ltv}}%
+            Percentual Máximo de Crédito: <button (click)="showLtv(creditLine)">Qual o LTV dessa operação ?</button><span *ngIf="indexOfElement==i; else valueNotFound">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}<br></span>
             <br>
-            <br>
+            <ng-template #valueNotFound><p></p></ng-template>
+
         </li>
     </ul>
+    <br>
+    <br>
+    <p>{{creditDetails}}</p>
 </div>
