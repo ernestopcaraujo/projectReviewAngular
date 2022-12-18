@@ -7,13 +7,16 @@
         <li *ngFor="let creditLine of creditLines; let indexOfElement=index">
             Linha de Crédito: {{creditLine.operation}}
             <br>
-            Percentual Máximo de Crédito: <button (click)="showLtv(creditLine)">Qual o LTV dessa operação ?</button><span *ngIf="indexOfElement==i; else valueNotFound">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}<br></span>
+            Percentual Máximo de Crédito:
+            <button (click)="showLtv(creditLine)">Qual o LTV dessa operação ?</button>
+            <span *ngIf="indexOfElement==i; else valueNotFound">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}<br></span>
+            <button (click)="excludeCredit(creditLine)">Excluir</button>
             <br>
             <ng-template #valueNotFound><p></p></ng-template>
-
         </li>
     </ul>
     <br>
     <br>
+    <button (click)="includeCredit()">INCLUIR O FGI</button>
     <p>{{creditDetails}}</p>
 </div>
