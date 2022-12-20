@@ -1,8 +1,23 @@
 <div class="class">
-  <h1>Hello World !</h1>
+  <h1>HEADER Hello World !</h1>
   <br />
 </div>
-<app-first-component></app-first-component>
+<div class="class">
+  <nav>
+    <a routerLink="/">Home [FirstComponent]</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <a routerLink="/list">Produtos de Crédito [ListRender Component]</a>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="class">
+  <h1>FOOTER</h1>
+  <br />
+</div>
+
+
+<!-- <app-first-component></app-first-component>
 <app-parent-data
   [driverName]="newDriver"
   [driverData]="newData"
@@ -14,4 +29,4 @@
 <app-emitter></app-emitter>
 <app-list-render></app-list-render>
 <app-pipes></app-pipes>
-<app-two-way></app-two-way>
+<app-two-way></app-two-way> -->
