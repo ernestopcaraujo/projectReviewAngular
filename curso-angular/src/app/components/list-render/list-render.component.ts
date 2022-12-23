@@ -17,19 +17,21 @@ export class ListRenderComponent implements OnInit {
   // ]
   //deixei comentado apenas para lembrar como fazer a tipagem de um array de objetos
 
-  creditLines: ICredit[] = [
-    { id: 1, operation: 'CGI', ltv: 60 },
-    { id: 2, operation: 'Aquisição', ltv: 80 },
-    { id: 3, operation: 'CDB', ltv: 300 },
-    { id: 4, operation: 'Aquisição Terreno', ltv: 40 }
-  ]
+  // creditLines: ICredit[] = [
+  //   { id: 1, operation: 'CGI', ltv: 60 },
+  //   { id: 2, operation: 'Aquisição', ltv: 80 },
+  //   { id: 3, operation: 'CDB', ltv: 300 },
+  //   { id: 4, operation: 'Aquisição Terreno', ltv: 40 }
+  // ]
+
+  creditLines: ICredit[] = [];
 
   nameOperation!: string;
   ltvOperation!: number;
   i!: number;
   creditDetails!: string;
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) { this.getCreditLines() }
 
   ngOnInit(): void {
   }
@@ -68,6 +70,9 @@ export class ListRenderComponent implements OnInit {
     this.listService.includeCreditService(this.creditLines);
   }
 
+  getCreditLines():void{
+    this.listService.getAll().subscribe((creditLines)=>{this.creditLines = creditLines})
+  }
 
 }
 
