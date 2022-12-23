@@ -14,6 +14,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayComponent } from './components/two-way/two-way.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
-    TwoWayComponent
+    TwoWayComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
