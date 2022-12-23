@@ -16,10 +16,9 @@ export class ListService {
   //Aqui eu estou forçando uma situação já que esses dados deveriam vir de um input de formulário
   includeCreditService(creditLines:ICredit[]){
 
-    const creditLine:ICredit = {operation:'FGI', ltv:50};
+    const creditLine:ICredit = {id:5, operation:'FGI', ltv:50};
 
     creditLines.push(creditLine);
-
 
   }
 
