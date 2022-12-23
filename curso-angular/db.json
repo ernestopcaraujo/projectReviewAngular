@@ -1,0 +1,8 @@
+{
+  "creditLines":[
+    { "operation": "CGI", "ltv": 60 },
+    { "operation": "Aquisição", "ltv": 80 },
+    { "operation": "CDB", "ltv": 300 },
+    { "operation": "Aquisição Terreno", "ltv": 40 }
+  ]
+}

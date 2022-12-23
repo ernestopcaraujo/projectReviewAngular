@@ -9,10 +9,10 @@
             <br>
             Percentual Máximo de Crédito:
             <button (click)="showLtv(creditLine)">Qual o LTV dessa operação ?</button>
-            <span *ngIf="indexOfElement==i; else valueNotFound">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}<br></span>
-            <button (click)="excludeCredit(creditLine)">Excluir</button>
+            <span *ngIf="indexOfElement==i">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}</span>
+            <br><button (click)="excludeCredit(creditLine)">Excluir</button>
             <br>
-            <ng-template #valueNotFound><p>Não Encontrado</p></ng-template>
+            <!-- <ng-template #valueNotFound><p>Não Encontrado</p></ng-template> deixado apenas como exemplo do else do ngIf, que seria ;else #valueNotFound -->
         </li>
     </ul>
     <br>
