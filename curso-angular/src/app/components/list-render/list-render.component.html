@@ -12,7 +12,7 @@
             <span *ngIf="indexOfElement==i; else valueNotFound">&nbsp;&nbsp;&nbsp;&nbsp;{{creditLines[indexOfElement].ltv}}<br></span>
             <button (click)="excludeCredit(creditLine)">Excluir</button>
             <br>
-            <ng-template #valueNotFound><p></p></ng-template>
+            <ng-template #valueNotFound><p>Não Encontrado</p></ng-template>
         </li>
     </ul>
     <br>
