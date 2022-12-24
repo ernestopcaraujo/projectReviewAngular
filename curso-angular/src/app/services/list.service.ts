@@ -30,4 +30,9 @@ export class ListService {
     return this.http.get<ICredit[]>(this.apiUrl);
   }
 
+  getOneCreditLine(id:number):Observable<ICredit>{
+    return this.http.get<ICredit>("http://localhost:3000/creditLines/"+id);
+    // return this.http.get<ICredit>('${this.apiUrl}/${id}');
+  }
+
 }
