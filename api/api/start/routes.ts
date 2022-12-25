@@ -26,4 +26,6 @@ Route.group(()=>{
     return { hello: 'world' }
   });
 
+  Route.resource("/moments", "MomentsController").apiOnly()
+
 }).prefix('/api')
