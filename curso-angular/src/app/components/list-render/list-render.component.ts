@@ -60,7 +60,8 @@ export class ListRenderComponent implements OnInit {
   }
 
   excludeCredit(creditLine: ICredit): void {
-    this.creditLines = this.listService.excludeCreditService(this.creditLines, creditLine);
+    this.creditLines = this.creditLines.filter((cl)=>creditLine.operation != cl.operation);
+    this.listService.excludeCreditService(creditLine.id).subscribe();
   }
 
   //essa feature de inclusão de linha de crédito não está funcionando corretamente
