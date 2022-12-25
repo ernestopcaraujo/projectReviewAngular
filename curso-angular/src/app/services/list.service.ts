@@ -15,9 +15,8 @@ export class ListService {
 
   constructor(private http: HttpClient) { }
 
-  excludeCreditService(creditLines:ICredit[], creditLine:ICredit):ICredit[]{
-    console.log(creditLine.operation);
-    return creditLines.filter((cl)=>creditLine.operation != cl.operation);
+  excludeCreditService(id:number){
+    return this.http.delete<ICredit>(`${this.apiUrl}/${id}`)
   }
 
   //Aqui eu estou forçando uma situação já que esses dados deveriam vir de um input de formulário
