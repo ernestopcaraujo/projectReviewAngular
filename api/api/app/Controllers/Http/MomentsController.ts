@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import Moment from 'App/Models/Moment'
 import  Application  from '@ioc:Adonis/Core/Application';
+import { Request } from '@adonisjs/core/build/standalone';
 
 
 export default class MomentsController {
@@ -71,4 +72,27 @@ export default class MomentsController {
 
   }
 
+  public async update({params,request}:HttpContextContract){
+
+    const body = request.body()
+    const moment = await Moment.findOrFail(params.id)
+    moment.title = body.title
+    moment.description = body.description
+    if ((moment.image != body.image)||!moment.image) {
+
+      const image = request.file('image',this.validationOptions)
+      if(image){
+        const imageName = `${uuidv4()}.${image.extname}`
+        await image.move(Application.tmpPath('uploads'),{name: imageName})
+        moment.image = imageName
+      }
+    }
+    await moment.save()
+
+    return {
+      message: 'Atualizado com sucesso !',
+      data: moment
+    }
+
+  }
 }
