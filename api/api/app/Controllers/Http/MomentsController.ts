@@ -43,7 +43,6 @@ export default class MomentsController {
 
   public async index() { //index é um metodo para obtenção de dados gerais
     const moments = await Moment.all() // o all captura todas as linhas da tabela
-
     return {
       data: moments
     }
@@ -52,12 +51,9 @@ export default class MomentsController {
 
   public async show({params}:HttpContextContract){
     const moment = await Moment.findOrFail(params.id)
-
     return{
       data:moment
     }
-
-
   }
 
   public async destroy({params}:HttpContextContract){
