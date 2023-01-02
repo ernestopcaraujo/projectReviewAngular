@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Cambria;
+  /* com o parâmetro abaixo os elementos de input não passarão do tamanho desejado */
+  box-sizing: border-box;
+  color: #444;
+}
+
+a{
+  text-decoration: none;
+  color:#444;
+  transition: 0.4s;
+}
+
+a:hover{
+  color:#dec129;
+}
