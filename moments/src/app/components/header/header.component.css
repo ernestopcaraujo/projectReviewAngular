@@ -11,6 +11,8 @@ nav
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: black
 }
 
 .brand img {
@@ -48,4 +50,9 @@ nav
 
 h2{
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
