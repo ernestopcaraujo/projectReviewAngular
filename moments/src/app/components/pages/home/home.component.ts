@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.momentService.getMoments().subscribe((items)=>{
       //essa função é necessária para que possamos manipular
       //algumas informações que virão nos Moments, como
-      //o formato da data, que será formato nas linhas a seguir
+      //o formato da data, que será formatado nas linhas a seguir
         const data = items.data;
         data.map((item) => {item.created_at = new Date(item.created_at!).toLocaleDateString('pt-BR')});
         this.allMoments = data;
