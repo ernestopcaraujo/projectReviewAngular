@@ -17,6 +17,9 @@ export class MomentComponent implements OnInit {
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.momentService.getMoment(id).subscribe((item)=>(this.moment = item.data));
+    // iria ser usado o nome "moment" porém como está vindo o moment e mais a mensagem
+    // optou-se por nomear como item
   }
 
 }
