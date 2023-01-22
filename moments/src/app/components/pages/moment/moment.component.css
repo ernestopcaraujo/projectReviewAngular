@@ -19,9 +19,9 @@ img{
 }
 
 .about-moment, .actions {
-  padding-bottom: 1em;
   border-bottom: 1px solid #ccc;
   padding: 1.2em;
+  width: 70%;
 }
 
 .actions{
@@ -31,6 +31,11 @@ img{
 .comments {
   margin-bottom: 1em;
   padding: 1.5em 0;
+}
 
+.about-moment h3,
+.actions h3,
+.comments h3{
+  margin-bottom: 1em;
 }
 
