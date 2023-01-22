@@ -1,0 +1,14 @@
+<div class="class">
+    <h1>Exibindo o componente Two Way</h1>
+    <form action="">
+        <input type="text"
+            [(ngModel)]="clientName"
+            name ='clientName'
+            placeholder="Insira o nome do cliente">
+        <input type="submit"
+            name="Enviar">
+    </form>
+    <div *ngIf = " clientName == 'Porsche' ">
+        <h1>Este é o cliente: {{clientName}}</h1>
+    </div>
+</div>

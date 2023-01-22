@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+a{
+    color: brown;
+}
+
+body{
+    padding-bottom: 500px;
+    background-color: darkkhaki;
+}
+
+.class {
+    border-bottom: 1px solid red;
+    padding: 2em;
+    margin-bottom: 1em;
+    background-color: darkkhaki;
+}
