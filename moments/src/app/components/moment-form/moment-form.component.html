@@ -1,5 +1,6 @@
 <form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
   <!-- O #formDir condiciona o disparo do erro à submissão do formulário -->
+  <input type="hidden" formControlName="id">
   <div class="form-group">
     <label for="title">Título:</label>
     <input type="text" placeholder="Coloque o título" formControlName="title" required>
